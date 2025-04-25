@@ -11,10 +11,10 @@
 <body>
   <header class="navbar">
     <h1>Eduguide</h1>
-    <p><b>Student Testimonials</b></p>
+    <p>Student Testimonials</p>
   </header>
+
   <main>
-    
     <section class="testimonials">
       <div class="testimonial-card fade-in">
         <img src="https://via.placeholder.com/100" alt="Student Photo" />
@@ -33,20 +33,13 @@
         <h3>Sneha Roy</h3>
         <p>"From counseling to final prep, Eduguide was with me every step of the way. Highly recommended!"</p>
       </div>
-
-      <div class="testimonial-card fade-in">
-        <img src="https://via.placeholder.com/100" alt="Student Photo" />
-        <h3>Rahul Roy</h3>
-        <p>" Hi, in eduguide you can learn more cources, very flexible teaching,From counseling to final prep, Eduguide was with me every step of the way. Highly recommended!"</p>
-      </div> 
-      <p> <b>then why waiting register now !!</b></p>
-      <button type="submit"> Register</button>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Eduguide. All rights reserved.</p>
   </footer>
+
   <script>
     // Simple fade-in animation when testimonials load
     document.addEventListener("DOMContentLoaded", () => {
@@ -58,6 +51,86 @@
         }, index * 300);
       });
     });
-  </script> 
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #E0E0E3;
+      color: #1E1E63;
+    }
+
+    .navbar {
+      background-color: #5C44BF;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .navbar p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .testimonial-card {
+      background-color: #F9D2A7;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .testimonial-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-card img {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-card h3 {
+      margin: 0.5rem 0;
+      color: #5C44BF;
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1E1E63;
+      color: white;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .testimonials {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </body>
+
 </html>
