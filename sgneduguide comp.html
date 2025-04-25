@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduguide - Student Testimonials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Eduguide</h1>
+    <p><b>Student Testimonials</b></p>
+  </header>
+  <main>
+    
+    <section class="testimonials">
+      <div class="testimonial-card fade-in">
+        <img src="https://via.placeholder.com/100" alt="Student Photo" />
+        <h3>Aisha Khan</h3>
+        <p>"Eduguide helped me secure admission in my dream university. The mentorship was priceless!"</p>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <img src="https://via.placeholder.com/100" alt="Student Photo" />
+        <h3>Rahul Verma</h3>
+        <p>"The resources and support at Eduguide are outstanding. I loved the journey!"</p>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <img src="https://via.placeholder.com/100" alt="Student Photo" />
+        <h3>Sneha Roy</h3>
+        <p>"From counseling to final prep, Eduguide was with me every step of the way. Highly recommended!"</p>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <img src="https://via.placeholder.com/100" alt="Student Photo" />
+        <h3>Rahul Roy</h3>
+        <p>" Hi, in eduguide you can learn more cources, very flexible teaching,From counseling to final prep, Eduguide was with me every step of the way. Highly recommended!"</p>
+      </div> 
+      <p> <b>then why waiting register now !!</b></p>
+      <button type="submit"> Register</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Eduguide. All rights reserved.</p>
+  </footer>
+  <script>
+    // Simple fade-in animation when testimonials load
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".fade-in");
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }, index * 300);
+      });
+    });
+  </script> 
+</body>
+</html>
